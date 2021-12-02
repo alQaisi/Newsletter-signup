@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+body{
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+main{
+    width: 90%;
+    max-width: 300px;
+    margin:15px 0;
+}
+.sign{
+    width: 100%;
+}
+h1{
+    font-weight: 400;
+    font-size: 1.75rem;
+}
+.logo{
+    padding: 7px;
+    background-color: #006cff;
+    border-radius: 50%;
+}
+.form-element{
+    position: relative;
+    text-align: right;
+    box-sizing: border-box;
+    padding:21px 0px 1px 0px;
+    background-color: white;
+    border: 1px solid rgba(116, 143, 179, 0.5);
+    display: flex;
+    justify-content: center;
+}
+.form-input{
+    width:97%;
+    box-sizing: border-box;
+    font-size: 1.15rem;
+    padding: 7px 9px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+.first{
+    border-bottom: none;
+}
+.first,.last:focus-within{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.first:focus-within,.last{
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.middle:focus-within{
+    border-radius: 4px;   
+}
+.middle{
+    border-radius: 0;
+    border-bottom:0;
+}
+label{
+    position: absolute;
+    left: 9px;
+    letter-spacing:1px;
+    cursor:text;
+    transition: all .15s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.form-element:focus-within label{
+    cursor: default;
+    top:5px;
+    font-size:.90rem;
+    color: rgb(110, 110, 110);
+}
+.form-element:focus-within{
+    -webkit-box-shadow: 0px 0px 0px 3px rgba(0,108,255,0.35); 
+    box-shadow: 0px 0px 0px 3px rgba(0,108,255,0.35);
+    z-index: 3;
+}
+.small-label{
+    top:5px;
+    font-size:.90rem;
+    color: rgb(110, 110, 110);
+    cursor: default;
+}
+button{
+    background-color: #0d6efd;
+    width: 100%;
+    padding:12px 15px;
+    font-size: 1.35rem;
+    color: white;
+    outline: none;
+    border:none;
+    margin-top:15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border:4px solid transparent;
+}
+button:hover{
+    background-color: #0052ce;
+}
+button:focus-within{
+    border:4px solid #5e9eff;
+}
+h5{
+    margin:10px;
+    font-weight: 500;
+    color: gray;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+.res_main{
+    max-width:100%;
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    top:0;
+    left: 0;
+    margin:0;
+}
+.failure .cont{
+    background-color: rgb(255, 80, 80);
+}
+.cont{
+    color: white;
+    box-sizing: border-box;
+    background-color: rgb(17, 127, 253);
+    padding: 15px 25px;
+}
